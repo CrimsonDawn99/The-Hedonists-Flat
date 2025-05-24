@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
         closeIcon.style.display = 'none';
       });
     });
+
+    document.addEventListener('click', (e) => {
+        const nav = document.getElementById('nav-menu');
+        const toggle = document.getElementById('menu-toggle');
+      
+        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+          nav.classList.remove('show');
+          toggle.querySelector('.icon-open').style.display = 'inline';
+          toggle.querySelector('.icon-close').style.display = 'none';
+        }
+      });
+      
   
 
     if (document.querySelector('#review-slider')) {

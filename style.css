@@ -400,7 +400,7 @@ footer p {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 16px;
         background-color: #f4f0eb;
         border-radius: 12px;
